@@ -1,0 +1,41 @@
+<html lang="pt">
+    <body>
+
+    <pre class="mermaid">
+            classDiagram
+
+            class ReprodutorMusical {
+            ReprodutorMusical : -String musica
+            +tocar()
+            +pausar()
+            +selecionarMusica(String musica)
+            }
+
+            class AparelhoTelefonico {
+                +atender()
+                +iniciarCorreioVoz()
+                +ligar(String exemplo)
+            }
+
+            class NavegadorInternet {
+                +adicionarNovaAba()
+                +atualizarPagina()
+                +exibirPagina(String exemplo)
+            }
+
+            class iPhone {
+                #bloquear()
+                #desbloquear()
+            }
+
+            iPhone --> ReprodutorMusical
+            iPhone --> AparelhoTelefonico
+            iPhone --> NavegadorInternet
+
+        </pre>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    </body>
+</html>
