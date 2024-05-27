@@ -1,8 +1,5 @@
-<html lang="pt">
-    <body>
-
-    <pre class="mermaid">
-            classDiagram
+```mermaid
+classDiagram
 
             class ReprodutorMusical {
             ReprodutorMusical : -String musica
@@ -31,11 +28,4 @@
             iPhone --> ReprodutorMusical
             iPhone --> AparelhoTelefonico
             iPhone --> NavegadorInternet
-
-        </pre>
-    <script type="module">
-        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-        mermaid.initialize({ startOnLoad: true });
-    </script>
-    </body>
-</html>
+```
